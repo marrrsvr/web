@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="formularios.css"
+</head>
+<body>
+    <header>
+        <h1>QUIZ GAME</h1>
+        <p>juego de preguntas</p>
+    </header>
+    <div class="container">
+        <section id="p0">
+            <h3>1- ¿cual de los siguientes NO es un software de diseño grafico?</h3>
+            <label>
+                <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">figma
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">visual studio code
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0" onclick="respuesta(0,this)">sketch
+            </label>
+        </section>
+            <section id="p1">
+                <h3>2- ¿que propiedad de CSS se usa para cambiar el tamaño del texto?</h3>
+                <label>
+                    <input type="radio" value="1" name="p1" onclick="respuesta(1,this)">size
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p1" onclick="respuesta(1,this)">font-family
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p1" onclick="respuesta(1,this)">font-size
+                </label>
+            </section>
+                <section id="p3">
+                    <h3>3- ¿cual es la etiqueta que en español se le conoce como cuerpo?</h3>
+                    <label>
+                        <input type="radio" value="1" name="p3" onclick="respuesta(2,this)">head
+                    </label>
+                    <label>
+                        <input type="radio" value="2" name="p3" onclick="respuesta(2,this)">body
+                    </label>
+                    <label>
+                        <input type="radio" value="3" name="p3" onclick="respuesta(2,this)">meta
+                    </label>
+                </section>
+                    <section id="p4">
+                        <h3>4- ¿que es la maquetacion?</h3>
+                        <label>
+                            <input type="radio" value="1" name="p4" onclick="respuesta(3,this)">crear un diseño visual atractivo
+                        </label>
+                        <label>
+                            <input type="radio" value="2" name="p4" onclick="respuesta(3,this)">escribir texto para un diseño
+                        </label>
+                        <label>
+                            <input type="radio" value="3" name="p4" onclick="respuesta(3,this)">organizar elementos en una pagina
+                        </label>
+                    </section>
+                        <section id="p5">
+                            <h3>5- ¿cual es la etiqueta que sirve para crear un hipervinculo?</h3>
+                            <label>
+                                <input type="radio" value="1" name="p5" onclick="respuesta(4,this)">a
+                            </label>
+                            <label>
+                                <input type="radio" value="2" name="p5" onclick="respuesta(4,this)">img
+                            </label>
+                            <label>
+                                <input type="radio" value="3" name="p5" onclick="respuesta(4,this)">header
+                            </label>
+                        </section>
+                            <section id="p6">
+                                <h3>6- ¿cual de los siguientes lenguajes se usa para definir la estructura de una pagina web?</h3>
+                                <label>
+                                    <input type="radio" value="1" name="p6" onclick="respuesta(5,this)">HTML
+                                </label>
+                                <label>
+                                    <input type="radio" value="2" name="p6" onclick="respuesta(5,this)">PHP
+                                </label>
+                                <label>
+                                    <input type="radio" value="3" name="p6" onclick="respuesta(5,this)">CSS
+                                </label>
+                            </section>
+                                <section id="p7">
+                                    <h3>7- ¿cual de las siguientes reglas de CSS permite aplicar estilos a varios elementos con una misma clase?</h3>
+                                    <label>
+                                        <input type="radio" value="1" name="p7" onclick="respuesta(6,this)">#nombre de la clase
+                                    </label>
+                                    <label>
+                                        <input type="radio" value="2" name="p7" onclick="respuesta(6,this)">.nombre de la clase
+                                    </label>
+                                    <label>
+                                        <input type="radio" value="3" name="p7" onclick="respuesta(6,this)">@nombre de la clase
+                                    </label>
+                                </section>
+                                    <section id="p8">
+                                        <h3>8- ¿cual es la estructura basica de HTML en una pagina web?</h3>
+                                        <label>
+                                            <input type="radio" value="1" name="p8" onclick="respuesta(7,this)">title, head, body
+                                        </label>
+                                        <label>
+                                            <input type="radio" value="2" name="p8" onclick="respuesta(7,this)">html, head, body
+                                        </label>
+                                        <label>
+                                            <input type="radio" value="3" name="p8" onclick="respuesta(7,this)">body, header, html
+                                        </label>
+                                    </section>
+                                        <section id="p9">
+                                            <h3>9- ¿cual de estos son tres elementos basicos de HTML y CSS?</h3>
+                                            <label>
+                                                <input type="radio" value="1" name="p9" onclick="respuesta(8,this)">titulos, parrafos, y videos
+                                            </label>
+                                            <label>
+                                                <input type="radio" value="2" name="p9" onclick="respuesta(8,this)">clases, maquetacion web, y tablas
+                                            </label>
+                                            <label>
+                                                <input type="radio" value="3" name="p9" onclick="respuesta(8,this)">divs, menus, y tablas
+                                            </label>
+                                        </section>
+                                            <section id="p10">
+                                                <h3>10- ¿cuales de estos atriubutos pertenecen a tamaños?</h3>
+                                                <label>
+                                                    <input type="radio" value="1" name="p10" onclick="respuesta(9,this)">box-shadow, background-image, background-repeat
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="2" name="p10" onclick="respuesta(9,this)">margin, padding, float
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="3" name="p10" onclick="respuesta(9,this)">text-decoration, font-size, font-family
+                                                </label>
+                                            </section>
+        <button class="btm" onclick="corregir()">corregir</button>
+        <h2>cantidad acertadas: <span id="resultado"></span></h2>
+    </div>
+    <script src="script.js"></script>
+    <button>
+        <a href="C:\Users\marie\OneDrive\Escritorio\proyecto de kike\indice.html">regresar a indice</a>
+    </button><br>
+    <br></br>
+</body>
+</html>

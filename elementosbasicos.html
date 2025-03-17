@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elementos-basicos</title>
+    <link rel="stylesheet" href="elementosbasic.css">
+</head>
+
+<body>
+    <h1 class="text1">elementos basicos</h1>
+    <h2 class="hola">titulos</h2>
+    <p>Uno de los elementos mas importantes de un sitio web es el contenido o el texto, por ello, se debe configurar
+        para que sea entendible y tenga una presentacion adecuada; los titulos y los subtitulos deben resaltar. En el
+        lenguaje HTML existe un conjunto de etiquetas para jerarquizar el texto que van de h1 hasta h6.</p>
+    <p>ejemplo de textos con h1 hasta h6:</p>
+    <h1>texto con h1</h1>
+    <h2>texto con h2</h2>
+    <h3>texto con h3</h3>
+    <h4>texto con h4</h4>
+    <h5>texto con h5</h5>
+    <h6>texto con h6</h6>
+    <h2 class="a">parrafos</h2>
+    <p>Escribir en HTML no es lo mismo que hacerlo en un procesor de texto; si en HTML dejas espacios entre parrafos, no
+        importa cuantos, siempre se veran justos al abrir y presentar la pagina; como se muestra abajo, donde existen
+        dos saltos de lineas en el codigo, pero al abrir la pagina en el navegador estos no se ven.</p>
+    <p>ejemplo:</p>
+    <p>este texto esta escrito con la etiqueta p.</p>
+    <p>la etiqueta p tambien tiene un atributo que es el align. se mostraran ejemplo:</p>
+    <p align="right" class="p1">esta linea esta alineada a la derecha</p>
+    <p align="justify" class="p2">esta linea estara justificada</p>
+    <p align="center" class="p3">esta linea esta centrada</p>
+    <p align="left" class="p4">esta linea esta alineada a la izquierda</p>
+    <h2 class="b">imagenes</h2>
+    <p>es bien sabido que las imagenes le brindan atractivo a una pagina web y para esto se utiliza la etiqueta img, y
+        aqui te mostraremos en la tabla 1.5 algunos de sus atributos.</p>
+    <table align="center">
+        <caption><em>tabla 1.5</em> Atributos, descripcion de la etiqueta img.</caption>
+        <tr>
+            <th>atributo</th>
+            <th>descripcion</th>
+        </tr>
+        <tr>
+            <td>src</td>
+            <td>especifica la ruta para encontrar la imagen que se desea cargar.</td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>permite alinear la imagen a la izquierda, derecha o el centro.</td>
+        </tr>
+        <tr>
+            <td>alt</td>
+            <td>agrega una descripcion a la imagen, aunque no todos los navegadores permiten ver dicha descripcion.</td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td>determina la altura de la imagen.</td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td>determina la anchura de la imagen.</td>
+        </tr>
+        <tr>
+            <td>border</td>
+            <td>aplica un borde a la imagen.</td>
+        </tr>
+    </table><br>
+    <p>la imagen debe de estar en la misma carpeta del archivo de la pagina web; por ejemplo debes de crear una carpeta
+        llamada imagenes y dentro de ella colocar las imagenes y asi solo usar las rutas.</p>
+    <h2 class="c">Hipervinculos o enlaces</h2>
+    <p>los hipervinculos son objetos muy comunes en las paginas web porque permiten enlazar el contenido dentro de la
+        misma pagina o fuera de ella, estos permiten que la navegacion sea mas agradable y facil para que el usuario no
+        se pierda mientras navega. Otras de sus funciones es redireccionar a archivos que se quieran compartir, como PDF
+        o Word, lo que ayuda a llegar a otros lugares de la red. A continuacion se explican los hipervinculos externos y
+        locales o anclas.</p>
+    <h2 class="d">Hipervinculos externos:</h2>
+    <p>para elaborar los hipervinculos se ocupan las etiqueta a con su atributo href. Esta composicion se divide en tres
+        partes.</p>
+    <ul>
+        <li>la etiqueta con su cierre:a</li>
+        <li>el atributo href con la asignacion de la url, por ejemplo: https://www.facebook.</li>
+    </ul>
+    <p>en la pagina web solo debe ver la leyenda ´visita facebook´.(obiamente si se le a asignado ese nombre).</p>
+    <p>otro atributo es target que sirve para determinar el destino; es decir, si el link se abrira en la misma pestaña
+        o en otra diferente, sus atributos son:</p>
+    <ol>
+        <li>_blank: abre el archivo vinculado en una nueva pestaña o ventana del navegador.</li>
+        <li>_self: se abre en la misma pestaña o ventana.</li>
+    </ol>
+    <h2 class="e">Hipervinculos locales o anclas</h2>
+    <p>seguro que alguna vez has usado el tipico menu de wikipedia con los temas y los subtemas que contiene, entonces
+        recordaras que al darle clic te lleva a traves de la pagina hasta tu seleccion sin salirte de ella, esto es
+        gracias a los hipervinculos locales que permiten el desplazamiento en toda la pagina sin necesidad de utilizar
+        el <em>scroll</em> del mouse para bajar. Aqui una guia para insertar un hipervinculo. <a href="https://desarrolladoresweb.org/html/enlaces-o-hipervinculos-en-html/">visite este enlace.</a></p>
+    <h2 class="f">Videos</h2>
+    <p>En el diseño web es posible insertar objetos multimedia como videos, para ello se debe usar la etiqueta "video" y
+        sus atributos.</p>
+    <table align="center">
+        <caption><em>tabla 1.6</em> atributos de la etiqueta video.</caption>
+        <tr>
+            <th>atributo</th>
+            <th>valor</th>
+            <th>descripcion</th>
+        </tr>
+        <tr>
+            <td>src</td>
+            <td>ruta local o nombre del video.</td>
+            <td>permiten referir al video local que se reproducira.</td>
+        </tr>
+        <tr>
+            <td>preload</td>
+            <td>auto/metadata/none</td>
+            <td>da la instruccion de como cargar el video.</td> 
+        </tr>
+        <tr>
+            <td>poster</td>
+            <td>ruta</td>
+            <td>permite mostrar una imagen como vista previa.</td>
+        </tr>
+        <tr>
+            <td>autoplay</td>
+            <td></td>
+            <td>configurar la reproduccion automatica.</td>
+        </tr>
+        <tr>
+            <td>loop</td>
+            <td></td>
+            <td>reinicia la reproduccion del video.</td>
+        </tr>
+        <tr>
+            <td>muted</td>
+            <td></td>
+            <td>el video se reproduce silenciado.</td>
+        </tr>
+        <tr>
+            <td>controls</td>
+            <td></td>
+            <td>muestra los controles de reproduccion.</td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td>tamaño del ancho</td>
+            <td>configura el ancho de la imagen.</td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td>tamaño de la altura</td>
+            <td>configurar la altura del video.</td>
+        </tr>
+    </table><br>
+    <img src="html-tagst.jpg"><br>
+    <button>
+        <a href="C:\Users\marie\OneDrive\Escritorio\proyecto de kike\indice.html">regresar a indice</a>
+    </button><br>
+    <br></br>
+</body>
+
+</html>

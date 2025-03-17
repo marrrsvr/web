@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(1157454.jpg);
+    background-size: cover;
+}
+button{
+    width: 165px;
+    height: 62;
+    cursor: pointer;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 1rem;
+    border:none;
+    position: relative;
+    background: #100720;
+    transition: 0.1s;
+}
+button::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 41, 41) 17.8%, rgb(65, 26, 236) 100.2%);
+    filter:blur(15px);
+    z-index: -1;
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+button:active{
+    transform: scale(0.9) rotate(3deg);
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 41, 41) 17.8%, rgb(65, 26, 236) 100.2%);
+    transition: 0.5s;
+}
+h1{
+    font-family: algerian;
+    color:#fff;
+    text-align: center;
+    animation: h1 0.4s ;
+}
+@keyframes h1{
+    0%{
+        transform: rotate3d(-1,1,0,0deg);
+    }
+    50%{
+        transform: rotate3d(-1,1,0,180deg);
+    }
+    100%{
+        transform: rotate3d(-1,1,0,360deg);
+    }
+}
+p{
+    font-family: monospace;
+    color:#fff;
+    text-align: center;
+    font-size: 25px;
+    animation: p 0.4s;
+}
+@keyframes p{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100px);
+    }
+}
+h2{
+    font-family: algerian;
+    color:#fff;
+    text-align: center;
+    animation: h2 0.4s linear both;
+}
+@keyframes h2{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+.ima{
+    display: flex;
+    justify-content: right;
+    border-radius: 5%;
+    border: 5px solid #f455;
+    height: 150px;
+    animation: ima 5s;
+}
+@keyframes ima{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100px);
+    }
+}
+.imag{
+    display: flex;
+    justify-content: right;
+    border-radius: 5%;
+    border: 5px solid #f455;
+    height: 150px;
+    animation: imag 5s;
+}
+@keyframes imag{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
